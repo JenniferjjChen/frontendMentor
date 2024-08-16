@@ -1,0 +1,86 @@
+.attribution { font-size: 11px; text-align: center; position: absolute; bottom: 1%;}
+
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+    background-color: hsl(47, 88%, 63%);
+    display: flex;
+    justify-content: center;
+}
+
+.thumbnail {
+    width: 100%;
+    grid-area: thumbnail;
+    border-radius: 4%;
+    margin-bottom: 5%;
+}
+
+@font-face {
+    font-family: 'Figtree';
+    src: url('assets/fonts/Figtree-VariableFont_wght.ttf');
+}
+
+.card {
+    background-color: hsl(0, 0%, 100%);
+    width: 280px;
+    font-family: 'Figtree';
+    font-size: 16px;
+    display: grid;
+    grid-template-areas: 
+        "thumbnail" 
+        "info"
+        "author";
+    border-radius: 4%;
+    border: solid;
+    box-shadow: 10px 10px black ;
+    padding: 3%;
+}
+
+.info {
+    text-align: left;
+    display: grid;
+    grid-area: info;
+    grid-template-areas: 
+        "type" 
+        "date" 
+        "h1" 
+        "p";
+    row-gap: 3%;
+}
+
+p {
+    color: hsl(0, 0%, 42%);
+    grid-area: p;
+    font-weight: 500;
+}
+
+h2 {
+    grid-area: h1;
+    font-weight: 800;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+type {
+    grid-area: type;
+    background-color: hsl(47, 88%, 63%);
+    padding: 3%;
+    width: 65px;
+    border-radius: 5px;
+    font-weight: 800;
+}
+
+date {
+    grid-area: date;
+}
+
+.author {
+    grid-area: author;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+}
+.profile {
+    height: 70%;
+    padding-right: 4%;
+}
