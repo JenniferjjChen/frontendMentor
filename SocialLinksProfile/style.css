@@ -1,0 +1,78 @@
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    position: absolute; 
+    bottom: 1%;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(0, 0%, 8%);
+    color: white;
+}
+
+container {
+    background-color: hsl(0, 0%, 12%);
+    display: grid;
+    grid-template-areas: 
+        "image"
+        "name"
+        "location"
+        "info"
+        "socials";
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    border-radius: 50%;
+    grid-area: image;
+}
+
+name {
+    grid-area: name;
+}
+
+location {
+    grid-area: location;
+}
+
+info {
+    grid-area: info;
+}
+
+socials {
+    grid-area: socials;
+    grid-template-areas: 
+        "git"
+        "fem"
+        "lin"
+        "twt"
+        "ins";
+}
+
+git {
+    grid-area: git;
+}
+
+fem {
+    grid-area: fem;
+}
+
+lin {
+    grid-area: lin;
+}
+
+twt {
+    grid-area: twt;
+}
+
+ins {
+    grid-area: ins;
+}
