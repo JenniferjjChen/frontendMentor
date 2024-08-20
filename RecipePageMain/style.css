@@ -23,6 +23,7 @@ body {
     background-color: hsl(30, 54%, 90%);
     min-height: 100vh;
     font-family: Outfit;
+    margin: 10%;
 }
 
 h1, h2 {
