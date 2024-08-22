@@ -1,0 +1,116 @@
+.attribution { font-size: 11px; text-align: position: absolute; center; bottom: 1%;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(30, 38%, 92%);
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    border-radius: 8px;
+    width: 370px;
+    align-items: stretch;
+}
+
+img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+}
+
+#desktop {
+    display: none;
+}
+
+.info {
+    padding: 1rem 2rem 2rem 2rem;
+}
+
+@media (min-width: 610px) {
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: white;
+        border-radius: 8px;
+        width: 610px;
+        align-items: stretch;
+    }
+
+    img {
+        width: 50%;
+        border-radius: 8px 0 0 8px;
+    }
+
+    #desktop {
+        display: inline-flex;
+    }
+
+    #mobile {
+        display: none;
+    }
+
+    .info {
+        padding: 1rem 2rem 2rem 2rem;
+    }
+}
+
+h2 {
+    letter-spacing: 4px;
+}
+
+h3 {
+    font-size: 2rem;
+    margin: 0;
+    font-family: 'Fraunces';
+    font-weight: 700;
+}
+
+h2, p, .original-price {
+    font-family: 'Montserrat';
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 150%;
+    padding-top: 3%;
+    color: grey;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+}
+
+.current-price {
+    color: hsl(158, 36%, 37%);
+    font-size: 2rem;
+    padding-left: 0;
+    padding-right: 1rem;
+    font-weight: 700;
+    font-family: 'Fraunces';
+}
+
+button {
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    border: none;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: hsl(212, 21%, 14%);
+}
